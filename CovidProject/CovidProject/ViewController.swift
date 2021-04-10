@@ -31,10 +31,11 @@ class ViewController: UIViewController {
 
     func Authenticate(username: String, password: String) {
         for user in users {
-            if user.username != username || user.password != password {
-                Alert(title: "Invalid Credentials", message: "We could not find an account with that username and password combination. Please try again.")
-            } else { break }
+            if user.username == username && user.password == password {
+                return;
+            }
         }
+        Alert(title: "Invalid Credentials", message: "We could not find an account with that username and password combination. Please try again.")
     }
     
     func Alert(title: String, message: String) {
