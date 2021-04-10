@@ -13,7 +13,7 @@
             <objects>
                 <viewController title="Awareness View Controller" id="RZK-Bf-lYv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gkt-Tw-mer">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="vL6-A0-ueA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -29,7 +29,7 @@
             <objects>
                 <viewController title="Locations View Controller" id="VTe-3M-sle" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uzg-Zo-rbZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="jVg-B2-WwP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -45,7 +45,7 @@
             <objects>
                 <viewController title="Quiz View Controller" id="qMr-p4-bCP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eHy-88-iSg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="IkL-2n-TER"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -61,7 +61,7 @@
             <objects>
                 <viewController title="Home View Controller" id="xkh-7m-GwT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pLe-6K-K6j">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="a1m-hW-xge"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -75,7 +75,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="rtu-qt-Tpg">
             <objects>
-                <tabBarController id="zWc-rp-ugs" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="zWc-rp-ugs" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="atx-IC-LkH"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hgF-U9-Dxt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -96,17 +96,51 @@
         <!--Login View Controller-->
         <scene sceneID="j3t-jJ-Eem">
             <objects>
-                <viewController title="Login View Controller" id="SSy-jQ-gyq" sceneMemberID="viewController">
+                <viewController title="Login View Controller" id="SSy-jQ-gyq" customClass="ViewController" customModule="CovidProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wao-Pu-fL0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X7p-P2-wrq">
+                                <rect key="frame" x="83" y="372" width="249" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Bo-Mx-Lx0">
+                                <rect key="frame" x="83" y="431" width="249" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGI-ts-5XN">
+                                <rect key="frame" x="160" y="504" width="94" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="zWc-rp-ugs" kind="show" id="iZQ-ln-Vr3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hiC-5N-8ow"/>
                         <color key="backgroundColor" red="1" green="0.3868133874901355" blue="0.32351780049595835" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="2Bo-Mx-Lx0" firstAttribute="top" secondItem="X7p-P2-wrq" secondAttribute="bottom" constant="25" id="2aT-em-mIU"/>
+                            <constraint firstItem="hiC-5N-8ow" firstAttribute="trailing" secondItem="2Bo-Mx-Lx0" secondAttribute="trailing" constant="82" id="2oe-j9-V4X"/>
+                            <constraint firstItem="X7p-P2-wrq" firstAttribute="leading" secondItem="hiC-5N-8ow" secondAttribute="leading" constant="83" id="35Z-P9-1VX"/>
+                            <constraint firstItem="hiC-5N-8ow" firstAttribute="trailing" secondItem="X7p-P2-wrq" secondAttribute="trailing" constant="82" id="DdH-PI-oqk"/>
+                            <constraint firstItem="2Bo-Mx-Lx0" firstAttribute="leading" secondItem="hiC-5N-8ow" secondAttribute="leading" constant="83" id="RrE-17-mAD"/>
+                            <constraint firstItem="hiC-5N-8ow" firstAttribute="trailing" secondItem="eGI-ts-5XN" secondAttribute="trailing" constant="160" id="Tbx-6h-0lK"/>
+                            <constraint firstItem="eGI-ts-5XN" firstAttribute="top" secondItem="2Bo-Mx-Lx0" secondAttribute="bottom" constant="39" id="pHu-2b-qPn"/>
+                            <constraint firstItem="hiC-5N-8ow" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="eGI-ts-5XN" secondAttribute="bottom" constant="266" id="yxb-Yr-94E"/>
+                            <constraint firstItem="eGI-ts-5XN" firstAttribute="leading" secondItem="hiC-5N-8ow" secondAttribute="leading" constant="160" id="zG2-Rr-xhJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="2Bo-Mx-Lx0" id="VT1-Pc-Wv3"/>
+                        <outlet property="usernameTextField" destination="X7p-P2-wrq" id="w3D-1r-R8w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evq-D9-erW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-514" y="-1142"/>
+            <point key="canvasLocation" x="-514.49275362318849" y="-1142.4107142857142"/>
         </scene>
     </scenes>
     <resources>
