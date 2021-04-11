@@ -19,7 +19,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="951-aq-4xl">
                                 <rect key="frame" x="6" y="110" width="374" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.31207059170000001" blue="0.25880828239999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">COVID - 19 is a disease caused by cornoavirus. Its known to spread through droplets released in the air by an cough or sneeze by an infected individual.  </string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -34,7 +34,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Wear a Mask" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vzF-sY-wcH">
                                 <rect key="frame" x="30" y="248" width="134" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.31207059170000001" blue="0.25880828239999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -48,7 +48,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Protect yourself and those around you by wearing a mask. Make sure the mask covers your nose and mouth. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jfN-LZ-SG8">
                                 <rect key="frame" x="21" y="296" width="164" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.31207059170000001" blue="0.25880828239999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -56,7 +56,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Wash your hands. Especially after bieng outside. Consider bringing handsanitizer with you during your day. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vZB-uD-Uwf">
                                 <rect key="frame" x="193" y="231" width="197" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.31207059170000001" blue="0.25880828239999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -70,7 +70,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="The vaccine is out! We encourage you to go get the vaccine if you are able to in your state. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="weh-NF-apF">
                                 <rect key="frame" x="10" y="459" width="188" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.31207059170000001" blue="0.25880828239999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -104,7 +104,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Eventhough the vaccine is out and cases are down, we are still not in the clear. Be mindful and continue to socially distance. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="91v-Wv-ZSM">
                                 <rect key="frame" x="196" y="385" width="184" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.31207059170000001" blue="0.25880828239999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -112,7 +112,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RIS-5p-sHZ">
                                 <rect key="frame" x="20" y="617" width="360" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.31207059170000001" blue="0.25880828239999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Symptoms to be aware of: headaches, a sore throat, shortness of breath, nausea, fever, chills, congestion, runny nose and muscle or body aches. If you belive that you may be at risk, take our quiz and find out if you need to get a Covid test.  </string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -134,7 +134,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vL6-A0-ueA"/>
-                        <color key="backgroundColor" red="1" green="0.31207059170383533" blue="0.25880828239390685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Awareness" image="person.fill.questionmark" catalog="system" selectedImage="person.fill.questionmark" id="guU-VT-6tD"/>
                 </viewController>
@@ -198,7 +198,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="encourage you to remain aware of COVID's status &amp; how to prevent from contracting it" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4o-Kp-poX">
                                 <rect key="frame" x="205" y="370" width="149" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -206,7 +206,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="keep you informed of the hot zones through tracking COVID cases state by state" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sos-MA-TNu">
                                 <rect key="frame" x="205" y="612" width="189" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -226,14 +226,14 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="learn what to do if you begin to feel symptoms. " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzT-j2-ijR">
                                 <rect key="frame" x="205" y="513" width="164" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a1m-hW-xge"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <color key="backgroundColor" red="0.99657469990000003" green="0.32680752870000002" blue="0.28230455519999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="0BG-Rz-evg"/>
                 </viewController>
@@ -289,7 +289,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hiC-5N-8ow"/>
-                        <color key="backgroundColor" red="1" green="0.3868133874901355" blue="0.32351780049595835" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.99657469990000003" green="0.32680752870000002" blue="0.28230455519999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="2Bo-Mx-Lx0" firstAttribute="top" secondItem="X7p-P2-wrq" secondAttribute="bottom" constant="25" id="2aT-em-mIU"/>
                             <constraint firstItem="hiC-5N-8ow" firstAttribute="trailing" secondItem="2Bo-Mx-Lx0" secondAttribute="trailing" constant="82" id="2oe-j9-V4X"/>
@@ -327,9 +327,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
