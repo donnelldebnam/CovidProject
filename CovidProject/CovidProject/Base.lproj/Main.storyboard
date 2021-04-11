@@ -195,42 +195,42 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="encourage you to remain aware of COVID's status &amp; how to prevent from contracting it" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o4o-Kp-poX">
-                                <rect key="frame" x="234" y="370" width="149" height="110"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="encourage you to remain aware of COVID's status &amp; how to prevent from contracting it" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4o-Kp-poX">
+                                <rect key="frame" x="205" y="370" width="149" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="learn what to do if you begin to feel symptoms. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DzT-j2-ijR">
-                                <rect key="frame" x="236" y="491" width="164" height="80"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="keep you informed of the hot zones through tracking COVID cases state by state" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sos-MA-TNu">
+                                <rect key="frame" x="205" y="612" width="189" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="keep you informed of the hot zones through tracking COVID cases state by state" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sos-MA-TNu">
-                                <rect key="frame" x="236" y="590" width="189" height="96"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="E0E-rk-iDi">
+                                <rect key="frame" x="48" y="357" width="135" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="H9j-HP-3oN">
-                                <rect key="frame" x="20" y="488" width="225" height="116"/>
+                                <rect key="frame" x="45" y="493" width="141" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="19Z-H2-Vgb">
-                                <rect key="frame" x="2" y="556" width="243" height="139"/>
+                                <rect key="frame" x="14" y="589" width="202" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="E0E-rk-iDi">
-                                <rect key="frame" x="14" y="357" width="225" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="learn what to do if you begin to feel symptoms. " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzT-j2-ijR">
+                                <rect key="frame" x="205" y="513" width="164" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a1m-hW-xge"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
