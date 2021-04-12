@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CC9111726239A60009E7303 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9111626239A60009E7303 /* LocationViewController.swift */; };
 		2CCB9605261DFA340069E239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB9604261DFA340069E239 /* AppDelegate.swift */; };
 		2CCB9607261DFA340069E239 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB9606261DFA340069E239 /* SceneDelegate.swift */; };
 		2CCB9609261DFA340069E239 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB9608261DFA340069E239 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CC9111626239A60009E7303 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		2CCB9601261DFA340069E239 /* CovidProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCB9604261DFA340069E239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CCB9606261DFA340069E239 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				2CCB9606261DFA340069E239 /* SceneDelegate.swift */,
 				2CCB9608261DFA340069E239 /* ViewController.swift */,
 				2CCB960A261DFA340069E239 /* Main.storyboard */,
+				2CC9111626239A60009E7303 /* LocationViewController.swift */,
 				2CCB96192620A3700069E239 /* User.swift */,
 				2CCB960D261DFA360069E239 /* Assets.xcassets */,
 				2CCB960F261DFA360069E239 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC9111726239A60009E7303 /* LocationViewController.swift in Sources */,
 				2CCB961A2620A3700069E239 /* User.swift in Sources */,
 				2CCB9609261DFA340069E239 /* ViewController.swift in Sources */,
 				2CCB9605261DFA340069E239 /* AppDelegate.swift in Sources */,

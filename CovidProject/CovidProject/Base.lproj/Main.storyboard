@@ -19,13 +19,10 @@
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="951-aq-4xl">
                                 <rect key="frame" x="6" y="110" width="374" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-
                                 <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
-
                                 <string key="text">COVID - 19 is a disease caused by cornoavirus. Its known to spread through droplets released in the air by an cough or sneeze by an infected individual.  </string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -116,13 +113,10 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Eventhough the vaccine is out and cases are down, we are still not in the clear. Be mindful and continue to socially distance. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="91v-Wv-ZSM">
                                 <rect key="frame" x="196" y="385" width="184" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-
                                 <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
-
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -131,7 +125,6 @@
                                 <rect key="frame" x="20" y="617" width="360" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
@@ -170,7 +163,7 @@
         <!--Locations View Controller-->
         <scene sceneID="2L1-R5-19T">
             <objects>
-                <viewController title="Locations View Controller" id="VTe-3M-sle" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LocationVC" title="Locations View Controller" id="VTe-3M-sle" customClass="LocationViewController" customModule="CovidProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uzg-Zo-rbZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
