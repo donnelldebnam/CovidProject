@@ -1,14 +1,14 @@
 //
-//  QuestionViewController.swift
+//  QuestionViewCont.swift
 //  CovidProject
 //
-//  Created by leslie jaiyesimi on 4/11/21.
+//  Created by leslie jaiyesimi on 4/12/21.
 //
 
 import Foundation
 import UIKit
 
-class QuestionViewController: UIViewController {
+class QuestionViewCont: UIViewController {
     
     @IBOutlet var questionLabel: UILabel!
     
@@ -45,46 +45,39 @@ class QuestionViewController: UIViewController {
     @IBOutlet var workyesButton: UIButton!
     @IBOutlet var worknoButton: UIButton!
     
-    @IBOutlet var resultsView: UIStackView!
-    @IBOutlet var resultsLabel1: UILabel!
-    @IBOutlet var resultsLabel2: UILabel!
-    
     @IBOutlet var questionProgressView: UIProgressView!
-    
-    @IBOutlet var startQuiz: UIButton!
-    
+        
     var questions: [Question] = [
-    
     Question(
         text: "Have you been around someone who has covid in the last 14 days?",
         type: .single,
-        answers: [
+        answers:[
         Answer(text: "Yes", type: .yes),
         Answer(text: "No", type: .no)
         ]
     ),
     
     Question (
-    text: "Have you experienced any of these symptoms?",
-    type: .multiple,
-    answers: [
-    Answer(text: "chills", type: .yes),
-    Answer(text: "headache", type: .yes),
-    Answer(text: "body aches", type: .yes),
-    Answer(text: "diarrhea", type: .yes),
-    Answer(text: "fever", type: .yes),
-    Answer(text: "loss of taste", type: .yes),
-    Answer(text: "shortness of breath", type: .yes),
-    Answer(text: "none of the above", type: .no)
+        text: "Have you experienced any of these symptoms?",
+        type: .multiple,
+        answers:[
+        Answer(text: "chills", type: .yes),
+        Answer(text: "headache", type: .yes),
+        Answer(text: "body aches", type: .yes),
+        Answer(text: "diarrhea", type: .yes),
+        Answer(text: "fever", type: .yes),
+        Answer(text: "loss of taste", type: .yes),
+        Answer(text: "shortness of breath", type: .yes),
+        Answer(text: "none of the above", type: .no)
     ]
 ),
     
     Question(
-    text: "Are you a resident in a special setting where the risk of covid - 19 transmission may be high?",
-    type: .single1,
-    answers: [
-    Answer(text: "yes", type: .yes),
-    Answer(text: "no", type: .no)
+        text: "Are you a resident in a special setting where the risk of covid - 19 transmission may be high?",
+        type: .single1,
+        answers:[
+        Answer(text: "yes", type: .yes),
+        Answer(text: "no", type: .no)
     ]
  ),
     
@@ -94,24 +87,20 @@ class QuestionViewController: UIViewController {
     answers:[
         Answer(text: "yes", type: .yes),
         Answer(text: "no", type: .no)
-        ]
-    )
+        ])
     
 ]
     
-
-
+    
 var questionIndex = 0
 var answersChosen: [Answer] = []
     
 override func viewDidLoad() {
     super.viewDidLoad()
-    //updateUI()
+    updateUI()
   }
     
-    
-    func updateUI(){
-        startQuiz.isHidden = true
+    func updateUI() {
         last14daysView.isHidden = true
         symptomsView.isHidden = true
         residentView.isHidden = true
@@ -194,7 +183,7 @@ override func viewDidLoad() {
             break
         }
    
-    // nextQuestion()
+    nextQuestion()
         
     }
     
@@ -226,7 +215,7 @@ override func viewDidLoad() {
             answersChosen.append(currentAnswers[7])
         }
       
-        //nextQuestion()
+        nextQuestion()
         
     }
     
@@ -242,7 +231,7 @@ override func viewDidLoad() {
             break
         }
     
-       //nextQuestion()
+       nextQuestion()
         
     }
     
@@ -258,11 +247,16 @@ override func viewDidLoad() {
             break
         }
     
-    //nextQuestion()
+    nextQuestion()
     
         
     }
 
+    @IBSegueAction func showResults(_ coder: NSCoder) -> ResultsViewController? {
+        return ResultsViewController(coder: coder, responses: answersChosen)
+    }
+
+    
     
     func nextQuestion() {
         questionIndex += 1
@@ -270,9 +264,9 @@ override func viewDidLoad() {
         if questionIndex < questions.count {
             updateUI()
         } else {
+          performSegue(withIdentifier: "Results", sender: nil)
         }
     }
-    
-        
+            
 }
 
