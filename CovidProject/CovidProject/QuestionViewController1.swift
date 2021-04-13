@@ -1,5 +1,5 @@
 //
-//  QuestionViewCont.swift
+//  QuestionViewController1.swift
 //  CovidProject
 //
 //  Created by leslie jaiyesimi on 4/12/21.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class QuestionViewCont: UIViewController {
+class QuestionViewController1: UIViewController {
     
     @IBOutlet var questionLabel: UILabel!
     
@@ -56,11 +56,10 @@ class QuestionViewCont: UIViewController {
         Answer(text: "No", type: .no)
         ]
     ),
-    
     Question (
         text: "Have you experienced any of these symptoms?",
         type: .multiple,
-        answers:[
+        answers: [
         Answer(text: "chills", type: .yes),
         Answer(text: "headache", type: .yes),
         Answer(text: "body aches", type: .yes),
@@ -71,7 +70,6 @@ class QuestionViewCont: UIViewController {
         Answer(text: "none of the above", type: .no)
     ]
 ),
-    
     Question(
         text: "Are you a resident in a special setting where the risk of covid - 19 transmission may be high?",
         type: .single1,

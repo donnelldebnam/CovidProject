@@ -52,5 +52,98 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA6EDA0A-C609-4FB6-8C1F-BFFD239EB032"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CovidProject/QuestionViewCont.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "QuestionViewCont"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "AA6EDA0A-C609-4FB6-8C1F-BFFD239EB032 - 350d82dcbd2bd8ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CovidProject.QuestionViewCont.__deallocating_deinit"
+                  moduleName = "CovidProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leslie/Documents/GitHub/CovidProject/CovidProject/CovidProject/QuestionViewCont.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "AA6EDA0A-C609-4FB6-8C1F-BFFD239EB032 - eb4b98b736ff3b7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CovidProject.QuestionViewCont.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CovidProject.QuestionViewCont"
+                  moduleName = "CovidProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leslie/Documents/GitHub/CovidProject/CovidProject/CovidProject/QuestionViewCont.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "AA6EDA0A-C609-4FB6-8C1F-BFFD239EB032 - 345afa07570d1e13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CovidProject.QuestionViewCont.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CovidProject.QuestionViewCont"
+                  moduleName = "CovidProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leslie/Documents/GitHub/CovidProject/CovidProject/CovidProject/QuestionViewCont.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "878">
+               </Location>
+               <Location
+                  uuid = "AA6EDA0A-C609-4FB6-8C1F-BFFD239EB032 - c8975a9da010b566"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CovidProject.QuestionViewCont.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CovidProject.QuestionViewCont&gt;"
+                  moduleName = "CovidProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leslie/Documents/GitHub/CovidProject/CovidProject/CovidProject/QuestionViewCont.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "AA6EDA0A-C609-4FB6-8C1F-BFFD239EB032 - 5844c3d51bd796df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CovidProject.QuestionViewCont.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CovidProject.QuestionViewCont&gt;"
+                  moduleName = "CovidProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leslie/Documents/GitHub/CovidProject/CovidProject/CovidProject/QuestionViewCont.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "819">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
