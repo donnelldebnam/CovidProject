@@ -106,9 +106,9 @@ override func viewDidLoad() {
         
         let currentQuestion = questions[questionIndex]
         let currentAnswers = currentQuestion.answers
-        let totalProgress = Float(questionIndex)/Float(questions.count)
+        let totalProgress = Float(questionIndex) / Float(questions.count)
         
-        navigationItem.title = "Question # \(questionIndex + 1)"
+        navigationItem.title = "Question #\(questionIndex + 1)"
         questionLabel.text = currentQuestion.text
         questionProgressView.setProgress(totalProgress, animated: true)
         
@@ -162,6 +162,16 @@ override func viewDidLoad() {
         workplaceView.isHidden = false
         workyesButton.setTitle(answers[0].text, for: .normal)
         worknoButton.setTitle(answers[1].text, for: .normal)
+    }
+    
+    func nextQuestion() {
+        questionIndex += 1
+            
+        if questionIndex < questions.count {
+            updateUI()
+        } else {
+          performSegue(withIdentifier: "Results", sender: nil)
+        }
     }
     
     @IBAction func startButtonPressed() {
@@ -254,17 +264,6 @@ override func viewDidLoad() {
         return ResultsViewController(coder: coder, responses: answersChosen)
     }
 
-    
-    
-    func nextQuestion() {
-        questionIndex += 1
-            
-        if questionIndex < questions.count {
-            updateUI()
-        } else {
-          performSegue(withIdentifier: "Results", sender: nil)
-        }
-    }
             
 }
 
