@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2CC9111726239A60009E7303 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9111626239A60009E7303 /* LocationViewController.swift */; };
 		2CC9111E2624CEC7009E7303 /* TestingLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9111D2624CEC7009E7303 /* TestingLocation.swift */; };
+		2CC9112226263CAC009E7303 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9112026263CAC009E7303 /* LocationTableViewCell.swift */; };
+		2CC9112326263CAC009E7303 /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9112126263CAC009E7303 /* LocationTableViewCell.xib */; };
 		2CCB9605261DFA340069E239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB9604261DFA340069E239 /* AppDelegate.swift */; };
 		2CCB9607261DFA340069E239 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB9606261DFA340069E239 /* SceneDelegate.swift */; };
 		2CCB9609261DFA340069E239 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB9608261DFA340069E239 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		2CC9111626239A60009E7303 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		2CC9111D2624CEC7009E7303 /* TestingLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingLocation.swift; sourceTree = "<group>"; };
+		2CC9112026263CAC009E7303 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		2CC9112126263CAC009E7303 /* LocationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
 		2CCB9601261DFA340069E239 /* CovidProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCB9604261DFA340069E239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CCB9606261DFA340069E239 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 				2CCB9608261DFA340069E239 /* ViewController.swift */,
 				2CCB960A261DFA340069E239 /* Main.storyboard */,
 				2CC9111626239A60009E7303 /* LocationViewController.swift */,
+				2CC9112026263CAC009E7303 /* LocationTableViewCell.swift */,
+				2CC9112126263CAC009E7303 /* LocationTableViewCell.xib */,
 				2CC9111D2624CEC7009E7303 /* TestingLocation.swift */,
 				2CCB96192620A3700069E239 /* User.swift */,
 				2CCB960D261DFA360069E239 /* Assets.xcassets */,
@@ -135,6 +141,7 @@
 			files = (
 				2CCB9611261DFA360069E239 /* LaunchScreen.storyboard in Resources */,
 				2CCB960E261DFA360069E239 /* Assets.xcassets in Resources */,
+				2CC9112326263CAC009E7303 /* LocationTableViewCell.xib in Resources */,
 				2CCB960C261DFA340069E239 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CC9111726239A60009E7303 /* LocationViewController.swift in Sources */,
+				2CC9112226263CAC009E7303 /* LocationTableViewCell.swift in Sources */,
 				2CC9111E2624CEC7009E7303 /* TestingLocation.swift in Sources */,
 				2CCB961A2620A3700069E239 /* User.swift in Sources */,
 				2CCB9609261DFA340069E239 /* ViewController.swift in Sources */,
