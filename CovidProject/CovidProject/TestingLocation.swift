@@ -25,7 +25,6 @@ struct TestingLocation: Codable {
     
 }
 
-
 struct PhysicalAddress: Decodable, Encodable {
     var id: String
     var location_id: String

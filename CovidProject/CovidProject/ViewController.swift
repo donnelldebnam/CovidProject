@@ -12,8 +12,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
         
-    static var userState: String?
-    static let locationVC = LocationViewController()
     static let users = [
         User(username: "siloh117", password: "aL,189", state: "california"),
         User(username: "jordy09", password: "Pn76Ba..", state: "delaware"),
@@ -29,16 +27,6 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         Authenticate(username: usernameTextField.text!, password: passwordTextField.text!)
-        ViewController.assignState(for: usernameTextField.text!)
-        ViewController.locationVC.viewController = self
-    }
-    
-    static func assignState(for username: String) {
-        for account in users {
-            if username == account.username {
-                ViewController.userState = account.state
-            }
-        }
     }
         
     func Authenticate(username: String, password: String) {
