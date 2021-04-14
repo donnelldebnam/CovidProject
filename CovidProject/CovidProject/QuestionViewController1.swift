@@ -60,22 +60,22 @@ class QuestionViewController1: UIViewController {
         text: "Have you experienced any of these symptoms?",
         type: .multiple,
         answers: [
-        Answer(text: "chills", type: .yes),
-        Answer(text: "headache", type: .yes),
-        Answer(text: "body aches", type: .yes),
-        Answer(text: "diarrhea", type: .yes),
-        Answer(text: "fever", type: .yes),
-        Answer(text: "loss of taste", type: .yes),
-        Answer(text: "shortness of breath", type: .yes),
-        Answer(text: "none of the above", type: .no)
+        Answer(text: "Chills", type: .yes),
+        Answer(text: "Headache", type: .yes),
+        Answer(text: "Body Aches", type: .yes),
+        Answer(text: "Diarrhea", type: .yes),
+        Answer(text: "Fever", type: .yes),
+        Answer(text: "Loss of Taste", type: .yes),
+        Answer(text: "Shortness of Breath", type: .yes),
+        Answer(text: "None of the Above", type: .no)
     ]
 ),
     Question(
         text: "Are you a resident in a special setting where the risk of covid - 19 transmission may be high?",
         type: .single1,
         answers:[
-        Answer(text: "yes", type: .yes),
-        Answer(text: "no", type: .no)
+        Answer(text: "Yes", type: .yes),
+        Answer(text: "No", type: .no)
     ]
  ),
     
@@ -83,8 +83,8 @@ class QuestionViewController1: UIViewController {
     text: "Do you work in a special setting where the risk of Covid - 19 transmission may be high?",
     type: .single2,
     answers:[
-        Answer(text: "yes", type: .yes),
-        Answer(text: "no", type: .no)
+        Answer(text: "Yes", type: .yes),
+        Answer(text: "No", type: .no)
         ])
     
 ]
