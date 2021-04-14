@@ -125,6 +125,16 @@ override func viewDidLoad() {
         }
     }
     
+    func nextQuestion() {
+        questionIndex += 1
+            
+        if questionIndex < questions.count {
+            updateUI()
+        } else {
+          performSegue(withIdentifier: "Results", sender: nil)
+        }
+    }
+    
     func update14daysView(using answers: [Answer]){
         last14daysView.isHidden = false
         yesbutton.setTitle(answers[0].text, for: .normal)
@@ -163,17 +173,6 @@ override func viewDidLoad() {
         workyesButton.setTitle(answers[0].text, for: .normal)
         worknoButton.setTitle(answers[1].text, for: .normal)
     }
-    
-    func nextQuestion() {
-        questionIndex += 1
-            
-        if questionIndex < questions.count {
-            updateUI()
-        } else {
-          performSegue(withIdentifier: "Results", sender: nil)
-        }
-    }
-
     
     @IBAction func daysAnswerButton(_ sender: UIButton) {
         let currentAnswers = questions[questionIndex].answers

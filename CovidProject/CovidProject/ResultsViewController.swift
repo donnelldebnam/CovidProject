@@ -12,8 +12,7 @@ class ResultsViewController: UIViewController {
     
     
     @IBOutlet var resultsAnswerLabel: UILabel!
-    
-    
+
     @IBOutlet var resultsResponse: UILabel!
     
     
