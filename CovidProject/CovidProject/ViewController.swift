@@ -11,27 +11,28 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    let users = [
-        User(username: "siloh117", password: "aL,189"),
-        User(username: "jordy09", password: "Pn76Ba.."),
-        User(username: "kramer54", password: "09jsuW"),
-        User(username: "stepht633", password: "6jGFba"),
-        User(username: "les905", password: "G67ag."),
+        
+    static let users = [
+        User(username: "siloh117", password: "aL,189", state: "california"),
+        User(username: "jordy09", password: "Pn76Ba..", state: "delaware"),
+        User(username: "kramer54", password: "09jsuW", state: "pennsylvania"),
+        User(username: "stepht633", password: "6jGFba", state: "new-york"),
+        User(username: "les905", password: "G67ag.", state: "new-jersey"),
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         Authenticate(username: usernameTextField.text!, password: passwordTextField.text!)
     }
-
+        
     func Authenticate(username: String, password: String) {
-        for user in users {
+        for user in ViewController.users {
             if user.username == username && user.password == password {
+                User.currentUser = user
                 return;
             }
         }
