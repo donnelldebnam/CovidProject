@@ -108,7 +108,7 @@ override func viewDidLoad() {
         let currentAnswers = currentQuestion.answers
         let totalProgress = Float(questionIndex) / Float(questions.count)
         
-        navigationItem.title = "Question #\(questionIndex + 1)"
+        navigationItem.title = "Covid Quiz"
         questionLabel.text = currentQuestion.text
         questionProgressView.setProgress(totalProgress, animated: true)
         
@@ -173,11 +173,7 @@ override func viewDidLoad() {
           performSegue(withIdentifier: "Results", sender: nil)
         }
     }
-    
-    @IBAction func startButtonPressed() {
-    
-        //nextQuestion
-    }
+
     
     @IBAction func daysAnswerButton(_ sender: UIButton) {
         let currentAnswers = questions[questionIndex].answers

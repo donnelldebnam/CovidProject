@@ -10,8 +10,10 @@ import UIKit
 
 class ResultsViewController: UIViewController {
     
-        
+    
     @IBOutlet var resultsAnswerLabel: UILabel!
+    
+    
     @IBOutlet var resultsResponse: UILabel!
     
     
@@ -44,7 +46,7 @@ class ResultsViewController: UIViewController {
          
         let mostCommonAnswer = frequentAnswersSorted.sorted { $0.1 > $1.1}.first!.key
     
-       resultsAnswerLabel.text = "Results"
+        resultsAnswerLabel.text = "Results"
         resultsResponse.text = mostCommonAnswer.definition
         
   }

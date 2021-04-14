@@ -454,9 +454,8 @@
                         <viewLayoutGuide key="safeArea" id="2vH-LW-UJd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <connections>
-                            <outlet property="resultsAnswerLabel" destination="K8a-td-hVv" id="maN-xR-5TN"/>
-                            <outlet property="resultsLabelAnswer" destination="K8a-td-hVv" id="2Xn-xN-Zmw"/>
-                            <outlet property="resultsResponse" destination="5mM-YX-EOA" id="OLl-Wo-pxS"/>
+                            <outlet property="resultsAnswerLabel" destination="K8a-td-hVv" id="HbD-Jb-3t3"/>
+                            <outlet property="resultsResponse" destination="5mM-YX-EOA" id="HPC-tf-4j9"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="b1e-rV-n0T">
@@ -465,7 +464,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JFO-ce-Ta0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="377" y="1142"/>
+            <point key="canvasLocation" x="376.81159420289856" y="1141.7410714285713"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="yfs-cu-6kK">
