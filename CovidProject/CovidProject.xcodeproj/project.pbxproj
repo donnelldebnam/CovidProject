@@ -18,6 +18,10 @@
 		2CCB960E261DFA360069E239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCB960D261DFA360069E239 /* Assets.xcassets */; };
 		2CCB9611261DFA360069E239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCB960F261DFA360069E239 /* LaunchScreen.storyboard */; };
 		2CCB961A2620A3700069E239 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB96192620A3700069E239 /* User.swift */; };
+		CE31582D262538A00010AA04 /* QuestionViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31582C262538A00010AA04 /* QuestionViewController1.swift */; };
+		CE49B45D26269D6500CF7E00 /* BeginQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B45C26269D6500CF7E00 /* BeginQuiz.swift */; };
+		CE52199D2623AA51006A16C8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52199C2623AA51006A16C8 /* Question.swift */; };
+		CE5219AC26249284006A16C8 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5219AB26249284006A16C8 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		2CCB9610261DFA360069E239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CCB9612261DFA360069E239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CCB96192620A3700069E239 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE31582C262538A00010AA04 /* QuestionViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController1.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		CE49B45C26269D6500CF7E00 /* BeginQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginQuiz.swift; sourceTree = "<group>"; };
+		CE52199C2623AA51006A16C8 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		CE5219AB26249284006A16C8 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +74,13 @@
 		2CCB9603261DFA340069E239 /* CovidProject */ = {
 			isa = PBXGroup;
 			children = (
+				CE49B45C26269D6500CF7E00 /* BeginQuiz.swift */,
 				2CCB9604261DFA340069E239 /* AppDelegate.swift */,
 				2CCB9606261DFA340069E239 /* SceneDelegate.swift */,
 				2CCB9608261DFA340069E239 /* ViewController.swift */,
 				2CCB960A261DFA340069E239 /* Main.storyboard */,
+				CE5219AB26249284006A16C8 /* ResultsViewController.swift */,
+				CE52199C2623AA51006A16C8 /* Question.swift */,
 				2CC9111626239A60009E7303 /* LocationViewController.swift */,
 				2CC9112026263CAC009E7303 /* LocationTableViewCell.swift */,
 				2CC9112126263CAC009E7303 /* LocationTableViewCell.xib */,
@@ -78,6 +89,7 @@
 				2CCB960D261DFA360069E239 /* Assets.xcassets */,
 				2CCB960F261DFA360069E239 /* LaunchScreen.storyboard */,
 				2CCB9612261DFA360069E239 /* Info.plist */,
+				CE31582C262538A00010AA04 /* QuestionViewController1.swift */,
 			);
 			path = CovidProject;
 			sourceTree = "<group>";
@@ -153,12 +165,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE31582D262538A00010AA04 /* QuestionViewController1.swift in Sources */,
+				CE52199D2623AA51006A16C8 /* Question.swift in Sources */,
 				2CC9111726239A60009E7303 /* LocationViewController.swift in Sources */,
 				2CC9112226263CAC009E7303 /* LocationTableViewCell.swift in Sources */,
 				2CC9111E2624CEC7009E7303 /* TestingLocation.swift in Sources */,
 				2CCB961A2620A3700069E239 /* User.swift in Sources */,
+				CE5219AC26249284006A16C8 /* ResultsViewController.swift in Sources */,
 				2CCB9609261DFA340069E239 /* ViewController.swift in Sources */,
 				2CCB9605261DFA340069E239 /* AppDelegate.swift in Sources */,
+				CE49B45D26269D6500CF7E00 /* BeginQuiz.swift in Sources */,
 				2CCB9607261DFA340069E239 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
