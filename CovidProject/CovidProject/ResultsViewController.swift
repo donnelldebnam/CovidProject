@@ -12,7 +12,6 @@ class ResultsViewController: UIViewController {
     
     
     @IBOutlet var resultsAnswerLabel: UILabel!
-
     @IBOutlet var resultsResponse: UILabel!
     
     
@@ -32,7 +31,6 @@ class ResultsViewController: UIViewController {
         calculatePersonalityResult()
         navigationItem.hidesBackButton = true
     }
-     
     func calculatePersonalityResult() {
     let frequencyOfAnswers = responses.reduce(into: [:]) {
             (counts, answer) in
@@ -42,8 +40,7 @@ class ResultsViewController: UIViewController {
     let frequentAnswersSorted = frequencyOfAnswers.sorted(by: { (pair1, pair2) in
             return pair1.value > pair2.value
         })
-         
-        let mostCommonAnswer = frequentAnswersSorted.sorted { $0.1 > $1.1}.first!.key
+        let mostCommonAnswer = frequencyOfAnswers.sorted { $0.1 > $1.1}.first!.key
     
         resultsAnswerLabel.text = "Results"
         resultsResponse.text = mostCommonAnswer.definition

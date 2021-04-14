@@ -488,7 +488,7 @@
                         <outlet property="workyesButton" destination="mjg-UJ-WE0" id="TfP-iO-r6S"/>
                         <outlet property="yesButton" destination="CEI-2n-ZHm" id="DHt-NS-0LA"/>
                         <outlet property="yesbutton" destination="AFQ-cK-0dX" id="KnE-Ss-Nbg"/>
-                        <segue destination="jtp-oA-KKq" kind="show" destinationCreationSelector="showResults:" id="pCH-wj-98D"/>
+                        <segue destination="jtp-oA-KKq" kind="show" identifier="Results" destinationCreationSelector="showResults:" id="pCH-wj-98D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qk-4X-4Ov" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -498,22 +498,22 @@
         <!--ResultsViewController-->
         <scene sceneID="n2L-jo-HFW">
             <objects>
-                <viewController title="ResultsViewController" id="jtp-oA-KKq" sceneMemberID="viewController">
+                <viewController title="ResultsViewController" id="jtp-oA-KKq" customClass="ResultsViewController" customModule="CovidProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bt5-Fg-KSI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmf-7h-yMR">
-                                <rect key="frame" x="166" y="366" width="83" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmf-7h-yMR">
+                                <rect key="frame" x="103" y="366" width="217" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dm3-PQ-etF">
-                                <rect key="frame" x="186" y="416" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dm3-PQ-etF">
+                                <rect key="frame" x="37" y="416" width="339" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -524,10 +524,14 @@
                     <navigationItem key="navigationItem" id="JvR-Xg-ZyJ">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="S0N-Op-H7O"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultsAnswerLabel" destination="Hmf-7h-yMR" id="Qo3-tZ-iPt"/>
+                        <outlet property="resultsResponse" destination="dm3-PQ-etF" id="Hz0-fE-1fb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JXq-Cf-PUq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1657" y="1144"/>
+            <point key="canvasLocation" x="1656.521739130435" y="1143.75"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="yfs-cu-6kK">

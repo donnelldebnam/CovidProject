@@ -30,7 +30,7 @@ enum AnswerType: String {
 var definition: String {
     switch self {
     case .yes:
-        return " Your answers deem that you should schedule for a covid test."
+        return " Your answers deem that you should schedule for a covid test. Review the location tag for testing locations in your state."
         
     case .no:
         return "Your answers deem that you do not need to schedule for a covid test."
