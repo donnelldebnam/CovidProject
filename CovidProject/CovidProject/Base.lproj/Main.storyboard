@@ -519,8 +519,7 @@
                                 <rect key="frame" x="136" y="568" width="120" height="30"/>
                                 <state key="normal" title="Testing Locations"/>
                                 <connections>
-                                    <action selector="locationButtonpressed:" destination="jtp-oA-KKq" eventType="touchUpInside" id="AUw-Nj-hP9"/>
-                                    <segue destination="VTe-3M-sle" kind="show" identifier="location" id="vvI-ic-Itp"/>
+                                    <segue destination="VTe-3M-sle" kind="show" identifier="location" id="XVN-Tv-vR1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -699,7 +698,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vvI-ic-Itp"/>
+        <segue reference="XVN-Tv-vR1"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="1080" height="1080"/>
