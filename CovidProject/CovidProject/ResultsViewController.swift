@@ -46,4 +46,12 @@ class ResultsViewController: UIViewController {
         resultsResponse.text = mostCommonAnswer.definition
         
   }
+    
+    
+    @IBAction func locationButtonpressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "location", sender: nil)
+    }
+    
+    
+    
 }
