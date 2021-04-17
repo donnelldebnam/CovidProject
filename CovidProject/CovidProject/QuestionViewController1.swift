@@ -252,8 +252,7 @@ override func viewDidLoad() {
     
     nextQuestion()
     
-        
-    }
+}
 
 
     @IBSegueAction func showResults(_ coder: NSCoder) -> ResultsViewController? {
