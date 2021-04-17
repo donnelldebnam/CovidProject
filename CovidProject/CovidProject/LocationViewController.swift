@@ -7,12 +7,6 @@
 
 import UIKit
 
-extension LocationViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("you tapped me!")
-    }
-}
-
 extension LocationViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,7 +18,10 @@ extension LocationViewController: UITableViewDataSource {
         let location = locationData[indexPath.row]
         cell.title.text = location.name
         cell.phone.text = location.phones[0].number
-        cell.address.text = location.physical_address[0].address_1
+        cell.address.text = location.physical_address[0].address_1 + ", "
+            + location.physical_address[0].city + ", "
+            + location.physical_address[0].state_province + " "
+            + location.physical_address[0].postal_code
         return cell
     }
 
@@ -39,9 +36,8 @@ class LocationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib(nibName: "LocationTableViewCell", bundle: nil)
-        tableView.rowHeight = 90
+        tableView.rowHeight = 130
         tableView.register(nib, forCellReuseIdentifier: "LocationTableViewCell")
-        tableView.delegate = self
         tableView.dataSource = self
         getTestingLocations()
     }
