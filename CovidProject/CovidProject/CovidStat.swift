@@ -25,7 +25,7 @@ struct Geo: Decodable,Encodable {
 struct Country: Decodable,Encodable {
     
     var countyName: String
-    var deathCt: Float
+    var deathCt: Int
     var positiveCt: Float
     var recoveredCt: Float
 }
