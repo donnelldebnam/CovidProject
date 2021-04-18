@@ -36,7 +36,6 @@ class HomeViewController: UIViewController {
                 let decoder = JSONDecoder()
                 do {
                     self.covidStatData = try decoder.decode(CovidStat.self, from: covidStatData)
-                    print(covidStatData)
                 } catch {
                     print(error)
                 }
