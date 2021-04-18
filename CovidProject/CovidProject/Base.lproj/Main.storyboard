@@ -543,7 +543,7 @@
         <!--Home View Controller-->
         <scene sceneID="yfs-cu-6kK">
             <objects>
-                <viewController title="Home View Controller" id="xkh-7m-GwT" sceneMemberID="viewController">
+                <viewController title="Home View Controller" id="xkh-7m-GwT" customClass="HomeViewController" customModule="CovidProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pLe-6K-K6j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -609,7 +609,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOF-Ye-CfO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1933.3333333333335" y="403.79464285714283"/>
+            <point key="canvasLocation" x="-1936" y="404"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rtu-qt-Tpg">
