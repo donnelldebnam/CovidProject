@@ -11,11 +11,12 @@ class HomeViewController: UIViewController {
     
     var covidStatData: CovidStat?
     
+    @IBOutlet weak var deathCountTextLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getCovidStat()
     }
-    
     
     func getCovidStatJSON(completion: @escaping (String?, Error?) -> Void) {
         let zipCd = User.currentUser?.zipCd
@@ -36,10 +37,12 @@ class HomeViewController: UIViewController {
                 let decoder = JSONDecoder()
                 do {
                     self.covidStatData = try decoder.decode(CovidStat.self, from: covidStatData)
+                    DispatchQueue.main.async {
+                        self.deathCountTextLabel.text = "Death count for \(self.covidStatData!.zipCd): \(self.covidStatData!.counties[0].deathCt)"
+                    }
                 } catch {
                     print(error)
                 }
-
             }
         })
     }

@@ -552,7 +552,7 @@
                                 <rect key="frame" x="14" y="126" width="386" height="183"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJO-D8-Kev">
-                                <rect key="frame" x="26" y="317" width="363" height="79"/>
+                                <rect key="frame" x="14" y="236" width="363" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Everyone has a role to play in fighting and staying safe against the corona virus, our response was developing an application to: </string>
@@ -561,7 +561,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Keep you informed of the hot zones through tracking COVID cases state by state" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sos-MA-TNu">
-                                <rect key="frame" x="193" y="639" width="189" height="96"/>
+                                <rect key="frame" x="188" y="647" width="189" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -569,19 +569,19 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="E0E-rk-iDi">
-                                <rect key="frame" x="30" y="-81" width="135" height="1080"/>
+                                <rect key="frame" x="30" y="-72" width="135" height="1080"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="H9j-HP-3oN">
-                                <rect key="frame" x="27" y="537" width="141" height="120"/>
+                                <rect key="frame" x="30" y="539" width="141" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="19Z-H2-Vgb">
-                                <rect key="frame" x="-1" y="601" width="202" height="142"/>
+                                <rect key="frame" x="0.0" y="617" width="202" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Learn what to do if you begin to feel symptoms. " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzT-j2-ijR">
-                                <rect key="frame" x="193" y="551" width="164" height="80"/>
+                                <rect key="frame" x="193" y="539" width="164" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -589,22 +589,15 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Encourage you to remain aware of COVID's status &amp; how to prevent from contracting it" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4o-Kp-poX">
-                                <rect key="frame" x="193" y="404" width="149" height="110"/>
+                                <rect key="frame" x="193" y="413" width="149" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99658137560000004" green="0.32676938179999998" blue="0.28622749450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jX2-I5-0c6">
-                                <rect key="frame" x="173" y="97" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aP7-Gk-Ja7">
-                                <rect key="frame" x="173" y="60" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Death count for [zipCd]: [deathCt]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgL-5t-lXx">
+                                <rect key="frame" x="20" y="356" width="357" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -620,6 +613,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="0BG-Rz-evg"/>
+                    <connections>
+                        <outlet property="deathCountTextLabel" destination="zgL-5t-lXx" id="t20-fw-10Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOF-Ye-CfO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
