@@ -29,10 +29,10 @@ struct County: Decodable, Encodable {
     var recoveredCt: Int?
     
     enum CodingKeys: String, CodingKey {
-        case countyName = "countyName"
-        case deathCt = "deathCt"
-        case positiveCt = "positiveCt"
-        case recoveredCt = "recoveredCt"
+        case countyName
+        case deathCt
+        case positiveCt
+        case recoveredCt
     }
     
     init(from decoder: Decoder) throws {
@@ -42,13 +42,7 @@ struct County: Decodable, Encodable {
         positiveCt = try container.decode(Int.self, forKey: .positiveCt)
         recoveredCt = try container.decodeIfPresent(Int.self, forKey: .recoveredCt)
     }
-    
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(countyName, forKey: .countyName)
-        try container.encode(deathCt, forKey: .deathCt)
-        try container.encode(positiveCt, forKey: .positiveCt)
-        try container.encode(recoveredCt, forKey: .recoveredCt)
-    }
+   
     
 }
+

@@ -12,7 +12,6 @@ class HomeViewController: UIViewController {
     var covidStatData: CovidStat?
     
     @IBOutlet weak var deathCountTextLabel: UILabel!
-    
     @IBOutlet weak var postiveCaseCountTextLabel: UILabel!
     
     override func viewDidLoad() {
@@ -55,7 +54,7 @@ class HomeViewController: UIViewController {
                         
                         // Update text labels
                         self.deathCountTextLabel.text = "Total death count for \(zipCd): \(formattedDeathCt) people"
-                        self.postiveCaseCountTextLabel.text = "Total positive count for \(self.covidStatData!.zipCd): \(formattedPositiveCaseCt) people"
+                        self.postiveCaseCountTextLabel.text = "Total positive count for \(zipCd): \(formattedPositiveCaseCt) people"
                         
                     }
                 } catch {
@@ -65,4 +64,6 @@ class HomeViewController: UIViewController {
         })
     }
 
+    
 }
+

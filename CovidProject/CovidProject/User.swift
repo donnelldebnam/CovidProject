@@ -26,4 +26,6 @@ struct User {
         User.currentUser = self
     }
     
+    
 }
+

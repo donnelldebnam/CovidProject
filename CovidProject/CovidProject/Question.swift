@@ -13,7 +13,6 @@ struct Question {
     var answers: [Answer]
 }
 
-
 enum ResponseType {
     case single, multiple, single1, single2
 }
@@ -21,19 +20,19 @@ enum ResponseType {
 struct Answer {
     var text: String
     var type: AnswerType
-    
 }
 
 enum AnswerType: String {
     case yes = "Yes", no = "No"
 
-var definition: String {
-    switch self {
-    case .yes:
-        return " Your answers deem that you should schedule for a covid test. Review the location tag for testing locations in your state."
-        
-    case .no:
-        return "Your answers deem that you do not need to schedule for a covid test."
+    var definition: String {
+        switch self {
+        case .yes:
+            return " Your answers deem that you should schedule for a covid test. Review the location tag for testing locations in your state."
+            
+        case .no:
+            return "Your answers deem that you do not need to schedule for a covid test."
+        }
     }
-  }
 }
+
