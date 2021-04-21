@@ -13,11 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
         
     static let users = [
-        User(username: "siloh117", password: "aL,189", state: "california"),
-        User(username: "jordy09", password: "Pn76Ba..", state: "delaware"),
-        User(username: "kramer54", password: "09jsuW", state: "florida"),
-        User(username: "stepht633", password: "6jGFba", state: "new-york"),
-        User(username: "les905", password: "G67ag.", state: "new-jersey"),
+        User(username: "siloh117", password: "aL,189", state: "california", zipCd: "90210"),
+        User(username: "jordy09", password: "Pn76Ba..", state: "delaware", zipCd: "01867"),
+        User(username: "kramer54", password: "09jsuW", state: "florida", zipCd: "33125"),
+        User(username: "stepht633", password: "6jGFba", state: "illinois", zipCd: "60440"),
+        User(username: "les905", password: "G67ag.", state: "new-jersey", zipCd: "07028"),
     ]
     
     override func viewDidLoad() {
@@ -47,4 +47,3 @@ class ViewController: UIViewController {
     }
     
 }
-
