@@ -40,8 +40,22 @@ class HomeViewController: UIViewController {
                 do {
                     self.covidStatData = try decoder.decode(CovidStat.self, from: covidStatData)
                     DispatchQueue.main.async {
-                        self.deathCountTextLabel.text = "Death count for \(self.covidStatData!.zipCd): \(self.covidStatData!.counties[0].deathCt) people"
-                        self.postiveCaseCountTextLabel.text = "Positive count for \(self.covidStatData!.zipCd): \(self.covidStatData!.counties[0].positiveCt) people"
+                        // Format the numeric values (decimal format)
+                        let numberFormatter = NumberFormatter()
+                        numberFormatter.numberStyle = .decimal
+                        
+                        // Extract values from class object
+                        let deathCt: Int = Int(self.covidStatData!.counties[0].deathCt)
+                        let positiveCaseCt: Int = Int(self.covidStatData!.counties[0].positiveCt)
+                        let zipCd: String = self.covidStatData!.zipCd
+                        
+                        // Format numeric values
+                        guard let formattedDeathCt = numberFormatter.string(from: NSNumber(value: deathCt)) else { return }
+                        guard let formattedPositiveCaseCt = numberFormatter.string(from: NSNumber(value: positiveCaseCt)) else { return }
+                        
+                        // Update text labels
+                        self.deathCountTextLabel.text = "Death count for \(zipCd): \(formattedDeathCt) people"
+                        self.postiveCaseCountTextLabel.text = "Positive count for \(self.covidStatData!.zipCd): \(formattedPositiveCaseCt) people"
                         
                     }
                 } catch {
