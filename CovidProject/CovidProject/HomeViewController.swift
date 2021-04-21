@@ -54,8 +54,8 @@ class HomeViewController: UIViewController {
                         guard let formattedPositiveCaseCt = numberFormatter.string(from: NSNumber(value: positiveCaseCt)) else { return }
                         
                         // Update text labels
-                        self.deathCountTextLabel.text = "Death count for \(zipCd): \(formattedDeathCt) people"
-                        self.postiveCaseCountTextLabel.text = "Positive count for \(self.covidStatData!.zipCd): \(formattedPositiveCaseCt) people"
+                        self.deathCountTextLabel.text = "Total death count for \(zipCd): \(formattedDeathCt) people"
+                        self.postiveCaseCountTextLabel.text = "Total positive count for \(self.covidStatData!.zipCd): \(formattedPositiveCaseCt) people"
                         
                     }
                 } catch {
