@@ -12,7 +12,6 @@ class HomeViewController: UIViewController {
     var covidStatData: CovidStat?
     
     @IBOutlet weak var deathCountTextLabel: UILabel!
-    
     @IBOutlet weak var postiveCaseCountTextLabel: UILabel!
     
     override func viewDidLoad() {

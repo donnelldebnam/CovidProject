@@ -15,12 +15,14 @@ struct User {
     var username: String
     var password: String
     var state: String
+    var zipCd: String?
         
     // Constructor
-    init(username: String, password: String, state: String) {
+    init(username: String, password: String, state: String, zipCd: String) {
         self.username = username
         self.password = password
         self.state = state
+        self.zipCd = zipCd
         User.currentUser = self
     }
     
