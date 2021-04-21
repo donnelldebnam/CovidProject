@@ -8,14 +8,13 @@
 import Foundation
 import UIKit
 
-class QuestionViewController1: UIViewController {
+class QuestionViewController: UIViewController {
     
     @IBOutlet var questionLabel: UILabel!
     
     @IBOutlet var last14daysView: UIStackView!
     @IBOutlet var yesbutton: UIButton!
     @IBOutlet var nobutton: UIButton!
-    
     
     @IBOutlet var symptomsView: UIStackView!
     @IBOutlet var multiLabel1: UILabel!
@@ -26,7 +25,6 @@ class QuestionViewController1: UIViewController {
     @IBOutlet var multiLabel6: UILabel!
     @IBOutlet var multiLabel7: UILabel!
     @IBOutlet var multiLabel8: UILabel!
-    
 
     @IBOutlet var multiSwitch1: UISwitch!
     @IBOutlet var multiSwitch2: UISwitch!
@@ -46,57 +44,50 @@ class QuestionViewController1: UIViewController {
     @IBOutlet var worknoButton: UIButton!
     
     @IBOutlet var questionProgressView: UIProgressView!
-        
+    
+    var questionIndex = 0
+    var answersChosen: [Answer] = []
     var questions: [Question] = [
-    Question(
-        text: "Have you been around someone who has covid in the last 14 days?",
-        type: .single,
-        answers:[
-        Answer(text: "Yes", type: .yes),
-        Answer(text: "No", type: .no)
+        Question(
+            text: "Have you been around someone who has covid in the last 14 days?",
+            type: .single,
+            answers:[
+                Answer(text: "Yes", type: .yes),
+                Answer(text: "No", type: .no)
+            ]),
+        Question (
+            text: "Have you experienced any of these symptoms?",
+            type: .multiple,
+            answers: [
+                Answer(text: "Chills", type: .yes),
+                Answer(text: "Headache", type: .yes),
+                Answer(text: "Body Aches", type: .yes),
+                Answer(text: "Diarrhea", type: .yes),
+                Answer(text: "Fever", type: .yes),
+                Answer(text: "Loss of Taste", type: .yes),
+                Answer(text: "Shortness of Breath", type: .yes),
+                Answer(text: "None of the Above", type: .no)
+            ]),
+        Question(
+            text: "Are you a resident in a special setting where the risk of covid - 19 transmission may be high?",
+            type: .single1,
+            answers:[
+                Answer(text: "Yes", type: .yes),
+                Answer(text: "No", type: .no)
+            ]),
+        Question (
+            text: "Do you work in a special setting where the risk of Covid - 19 transmission may be high?",
+            type: .single2,
+            answers:[
+                Answer(text: "Yes", type: .yes),
+                Answer(text: "No", type: .no)
+            ])
         ]
-    ),
-    Question (
-        text: "Have you experienced any of these symptoms?",
-        type: .multiple,
-        answers: [
-        Answer(text: "Chills", type: .yes),
-        Answer(text: "Headache", type: .yes),
-        Answer(text: "Body Aches", type: .yes),
-        Answer(text: "Diarrhea", type: .yes),
-        Answer(text: "Fever", type: .yes),
-        Answer(text: "Loss of Taste", type: .yes),
-        Answer(text: "Shortness of Breath", type: .yes),
-        Answer(text: "None of the Above", type: .no)
-    ]
-),
-    Question(
-        text: "Are you a resident in a special setting where the risk of covid - 19 transmission may be high?",
-        type: .single1,
-        answers:[
-        Answer(text: "Yes", type: .yes),
-        Answer(text: "No", type: .no)
-    ]
- ),
     
-    Question (
-    text: "Do you work in a special setting where the risk of Covid - 19 transmission may be high?",
-    type: .single2,
-    answers:[
-        Answer(text: "Yes", type: .yes),
-        Answer(text: "No", type: .no)
-        ])
-    
-]
-    
-    
-var questionIndex = 0
-var answersChosen: [Answer] = []
-    
-override func viewDidLoad() {
-    super.viewDidLoad()
-    updateUI()
-  }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateUI()
+    }
     
     func updateUI() {
         last14daysView.isHidden = true
@@ -121,13 +112,11 @@ override func viewDidLoad() {
             updateResidentView(using: currentAnswers)
         case .single2:
             updateWorkPlaceView(using: currentAnswers)
-            
         }
     }
     
     func nextQuestion() {
         questionIndex += 1
-            
         if questionIndex < questions.count {
             updateUI()
         } else {
@@ -185,9 +174,7 @@ override func viewDidLoad() {
         default:
             break
         }
-   
-    nextQuestion()
-        
+        nextQuestion()
     }
     
     @IBAction func symptomsButtonPressed() {
@@ -217,9 +204,7 @@ override func viewDidLoad() {
         if multiSwitch8.isOn {
             answersChosen.append(currentAnswers[7])
         }
-      
         nextQuestion()
-        
     }
     
     @IBAction func residentButtonPressed(_ sender: UIButton) {
@@ -233,9 +218,7 @@ override func viewDidLoad() {
         default:
             break
         }
-    
-       nextQuestion()
-        
+        nextQuestion()
     }
     
     @IBAction func workplaceButtonPressed(_ sender: UIButton) {
@@ -249,15 +232,13 @@ override func viewDidLoad() {
         default:
             break
         }
-    
-    nextQuestion()
-    
-}
-
+        nextQuestion()
+    }
 
     @IBSegueAction func showResults(_ coder: NSCoder) -> ResultsViewController? {
         return ResultsViewController(coder: coder, responses: answersChosen)
     }
+   
     
 }
 
