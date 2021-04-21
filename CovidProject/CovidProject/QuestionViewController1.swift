@@ -49,7 +49,7 @@ class QuestionViewController1: UIViewController {
         
     var questions: [Question] = [
     Question(
-        text: "Have you been around someone who has covid in the last 14 days?",
+        text: "Have you been around someone who has had covid in the last 14 days?",
         type: .single,
         answers:[
         Answer(text: "Yes", type: .yes),
