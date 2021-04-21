@@ -237,7 +237,7 @@
         <!--QuizController-->
         <scene sceneID="VbS-IS-yEs">
             <objects>
-                <viewController title="QuizController" id="lg5-oC-LTs" customClass="QuestionViewController1" customModule="CovidProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="QuizController" id="lg5-oC-LTs" customClass="QuestionViewController" customModule="CovidProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X8Q-Qq-BNi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -22,7 +22,6 @@ struct TestingLocation: Codable {
     var physical_address: [PhysicalAddress]
     var phones: [Phone]
     var regular_schedule: [DailySchedule]
-    
 }
 
 struct PhysicalAddress: Decodable, Encodable {
