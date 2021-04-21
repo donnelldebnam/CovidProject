@@ -20,7 +20,7 @@
 		2CCB961A2620A3700069E239 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB96192620A3700069E239 /* User.swift */; };
 		4BCCFDA4262CBB590037E44D /* CovidStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCCFDA3262CBB590037E44D /* CovidStat.swift */; };
 		4BCCFDA7262CBDDF0037E44D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCCFDA6262CBDDF0037E44D /* HomeViewController.swift */; };
-		CE31582D262538A00010AA04 /* QuestionViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31582C262538A00010AA04 /* QuestionViewController1.swift */; };
+		CE31582D262538A00010AA04 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31582C262538A00010AA04 /* QuestionViewController.swift */; };
 		CE49B45D26269D6500CF7E00 /* BeginQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B45C26269D6500CF7E00 /* BeginQuiz.swift */; };
 		CE52199D2623AA51006A16C8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52199C2623AA51006A16C8 /* Question.swift */; };
 		CE5219AC26249284006A16C8 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5219AB26249284006A16C8 /* ResultsViewController.swift */; };
@@ -42,7 +42,7 @@
 		2CCB96192620A3700069E239 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4BCCFDA3262CBB590037E44D /* CovidStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidStat.swift; sourceTree = "<group>"; };
 		4BCCFDA6262CBDDF0037E44D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		CE31582C262538A00010AA04 /* QuestionViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController1.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		CE31582C262538A00010AA04 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		CE49B45C26269D6500CF7E00 /* BeginQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginQuiz.swift; sourceTree = "<group>"; };
 		CE52199C2623AA51006A16C8 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		CE5219AB26249284006A16C8 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 				2CCB960D261DFA360069E239 /* Assets.xcassets */,
 				2CCB960F261DFA360069E239 /* LaunchScreen.storyboard */,
 				2CCB9612261DFA360069E239 /* Info.plist */,
-				CE31582C262538A00010AA04 /* QuestionViewController1.swift */,
+				CE31582C262538A00010AA04 /* QuestionViewController.swift */,
 			);
 			path = CovidProject;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE31582D262538A00010AA04 /* QuestionViewController1.swift in Sources */,
+				CE31582D262538A00010AA04 /* QuestionViewController.swift in Sources */,
 				CE52199D2623AA51006A16C8 /* Question.swift in Sources */,
 				2CC9111726239A60009E7303 /* LocationViewController.swift in Sources */,
 				4BCCFDA4262CBB590037E44D /* CovidStat.swift in Sources */,
