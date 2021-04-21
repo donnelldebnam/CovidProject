@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var deathCountTextLabel: UILabel!
     
+    @IBOutlet weak var postiveCaseCountTextLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getCovidStat()
@@ -38,7 +40,9 @@ class HomeViewController: UIViewController {
                 do {
                     self.covidStatData = try decoder.decode(CovidStat.self, from: covidStatData)
                     DispatchQueue.main.async {
-                        self.deathCountTextLabel.text = "Death count for \(self.covidStatData!.zipCd): \(self.covidStatData!.counties[0].deathCt)"
+                        self.deathCountTextLabel.text = "Death count for \(self.covidStatData!.zipCd): \(self.covidStatData!.counties[0].deathCt) people"
+                        self.postiveCaseCountTextLabel.text = "Positive count for \(self.covidStatData!.zipCd): \(self.covidStatData!.counties[0].positiveCt) people"
+                        
                     }
                 } catch {
                     print(error)
